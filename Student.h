@@ -17,10 +17,10 @@ class Student {
   Student(std::string fn, std::string ln,
           int y, Major m);
   virtual ~Student();
-
+  virtual std::string getLast();
   virtual float getGpa();
   virtual void addGrade(float grade);
-
+  virtual Major getMajor();
   // new method so we can generate map key 
   // from Student object
   virtual const std::string& getLastName();
