@@ -29,6 +29,7 @@ class Student {
    * GPA: x.xx
    */
   virtual void printInfo();
+  virtual std::string majorString(Major m);
 
 };
 
