@@ -21,11 +21,6 @@ class Student {
   virtual float getGpa();
   virtual void addGrade(float grade);
   virtual Major getMajor();
-  // new method so we can generate map key 
-  // from Student object
-  virtual const std::string& getLastName();
-  
-  static std::string majorString(Major m);
   
   /*
    * Should print:

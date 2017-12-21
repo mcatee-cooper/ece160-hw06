@@ -29,9 +29,10 @@ void MastersStudent::addMsGrade(float grade) {
 
 // Override Student's printInfo to include new fields
 void MastersStudent::printInfo() {
-  Student::printInfo();
-  std::stringstream line3;
-  line3 << "MS " << Student::majorString(getMajor()) << ":" << std::to_string(_ms_grad_year);
-  std::cout << line3.str() << std::endl;
-  printf("MS GPA: %.2f\n", getMsGpa());
+  Student::printInfo();{
+    std::stringstream line3;
+    line3 << "MS " << Student::majorString(getMajor()) << ":" << std::to_string(_ms_grad_year);
+    std::cout << line3.str() << std::endl;
+    printf("MS GPA: %.2f\n", getMsGpa());
+  }
 }
